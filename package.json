@@ -1,0 +1,23 @@
+{
+  "name": "changelog-generator",
+  "version": "1.0.0",
+  "devDependencies": {
+    "auto-changelog": "*"
+  },
+  "auto-changelog": {
+    "issueUrl": "http://jira.nim.ovh/browse/{id}",
+    "issuePattern": "#[A-Z]+-\\d+",
+    "replaceText": {
+      "feat: ": "",
+      "fix: ": "",
+      "deprecated: ": "",
+      "breaking change: ": ""
+    },
+    "unreleased": true,
+    "commitLimit": false,
+    "template": "./changelog-template.hbs"
+  },
+  "scripts": {
+    "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md"
+  }
+}
