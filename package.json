@@ -8,10 +8,12 @@
     "issueUrl": "http://jira.nim.ovh/browse/{id}",
     "issuePattern": "#[A-Z]+-\\d+",
     "replaceText": {
+      "breaking change: ": "",
       "feat: ": "",
-      "fix: ": "",
       "deprecated: ": "",
-      "breaking change: ": ""
+      "fix: ": "",
+      "removed :": "",
+      "security :": ""
     },
     "unreleased": true,
     "commitLimit": false,
