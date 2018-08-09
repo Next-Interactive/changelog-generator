@@ -4,7 +4,7 @@ Automate the generation of changelog and tagging.
 Installation
 ------
 
-*TODO: We could automate that when we commit with a CI to automatically update the `CHANGELOG.md`.*
+*TODO: We could automate with a CI to automatically update the `CHANGELOG.md` on a push | PR*
 
 First you need NodeJS to commit on this project. I advise you to use [nvm](https://github.com/creationix/nvm) to manage `node` version on your computer.
 
@@ -14,25 +14,24 @@ Then you need to install [auto-changelog](https://github.com/CookPete/auto-chang
 
 This will update the *changelog* depending on the commit guideline.
 
+Usage
+------
+
+`npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]`
+
+For example if the version in `package.json` is `1.0.1` and you want to update to a new minor version use:
+`npm version minor`
+
+You can also specify specific version, it is useful for `beta` or `alpha` versions:
+`npm version 1.0.1-beta.0`
+
+
 Guideline
 ------
 
-**Commit**:
+- [Default template guideline](docs/default_template.md) | [Example](docs/default_example.md)
 
-They should use the pattern defined in the table under.
-`EXP-1234` correspond to the define JIRA task if one is associated to the commit.
+Tweak
+------
 
-| Type  | Commit template | Description |
-| ------------- | ------------- | ------------- |
-| Breaking Change | `breaking change: description of commit #EXP-1234` | Deprecated usage which is going to disappear in the next version |
-| New Features | `feat: description of commit #EXP-1234` | When a new feature is added |
-| Changed (*Default*) | `description of commit #EXP-1234` | This is the default commit just containing change to the code that doesn't affect much |
-| Deprecated | `deprecated: description of commit #EXP-1234` | Deprecated usage which is going to disappear in the next version |
-| Fixed | `fix: description of commit #EXP-1234` | When a fix is done |
-| Removed | `removed: description of commit #EXP-1234` | A functionality or file removed |
-| Security | `security: description of commit #EXP-1234` | Security patch |
-
-**Semver & Changelog**:
-
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+You can tweak the package.json to your guise to use something else than jira as issue provider. If you want to go deeper and create your own template I advise you to check the readme on [auto-changelog](https://github.com/CookPete/auto-changelog).
