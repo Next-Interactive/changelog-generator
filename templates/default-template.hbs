@@ -21,37 +21,37 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   {{/each}}
 
   {{! List commits with `Breaking change: ` somewhere in the message }}
-  {{#commit-list commits heading='#### Breaking Changes' message='breaking changes: '}}
+  {{#commit-list commits heading='#### :rotating_light:  Breaking Changes  :rotating_light:' message='breaking changes: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits that add new features, but not those already listed above }}
-  {{#commit-list commits heading='#### New Features' message='feat: '}}
+  {{#commit-list commits heading='#### :sparkles:  New Features' message='feat: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits with changes inside (Default), but not those already listed above }}
-  {{#commit-list commits heading='#### Changed' exclude='breaking changes: |feat: |fix: |deprecated: |removed: |security: '}}
+  {{#commit-list commits heading='#### :wrench:  Changed' exclude='breaking changes: |feat: |fix: |deprecated: |removed: |security: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits with deprecated changes, but not those already listed above }}
-  {{#commit-list commits heading='#### Deprecated' message='deprecated: '}}
+  {{#commit-list commits heading='####  :warning:  Deprecated' message='deprecated: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits that add fixes, but not those already listed above }}
-  {{#commit-list commits heading='#### Fixed' message='fix: '}}
+  {{#commit-list commits heading='#### :bug:  Fixed' message='fix: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits with deprecated changes, but not those already listed above }}
-  {{#commit-list commits heading='#### Removed' message='removed: '}}
+  {{#commit-list commits heading='####  :no_entry_sign:  Removed' message='removed: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{! List commits with deprecated changes, but not those already listed above }}
-  {{#commit-list commits heading='#### Security' message='security: '}}
+  {{#commit-list commits heading='#### :lock:  Security' message='security: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 {{/each}}
