@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [v2.0.2](https://github.com/Jno21/changelog-generator/compare/v2.0.1...v2.0.2)
+> 9 August 2018
+
+#### Fixed
+
+- Rename default-template.md to default_template.md [`092016a`](https://github.com/Jno21/changelog-generator/commit/092016ad6526a190a473ff2da5c1309568f30f08)
+
 ### [v2.0.1](https://github.com/Jno21/changelog-generator/compare/v2.0.0...v2.0.1)
 > 9 August 2018
 
