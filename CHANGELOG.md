@@ -4,7 +4,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-### 1.0.0
+## [v2.0.0](https://github.com/Jno21/changelog-generator/compare/v1.0.0...v2.0.0)
+> 9 August 2018
+
+#### Breaking Changes
+
+- Moved and rename the template to templates/default.hbs [`0da6034`](https://github.com/Jno21/changelog-generator/commit/0da603458b189cc17c7e74a16eebc5557ca86999)
+
+#### New Features
+
+- Add &#x60;security&#x60; and &#x60;removed&#x60; to new type of commit [`b65abcf`](https://github.com/Jno21/changelog-generator/commit/b65abcf0dc90c7347379520569163d530bfffa37)
+- Add example to default_template [`ded6f68`](https://github.com/Jno21/changelog-generator/commit/ded6f6873e396c7b18d71e52ad7e298071d7ff7e)
+
+#### Changed
+
+- Refactor documentation to be more complete and easy to understand [`2901f29`](https://github.com/Jno21/changelog-generator/commit/2901f2940bb79e2b6040ccf7b18802e710457043)
+
+#### Fixed
+
+- Fix breaking changes in package.json, incorrect syntax [`7d809cc`](https://github.com/Jno21/changelog-generator/commit/7d809cc74140446a5972fe1e0cd7991de11f104d)
+
+### v1.0.0
 > 7 August 2018
 
 #### New Features
