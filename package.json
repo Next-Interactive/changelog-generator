@@ -8,7 +8,7 @@
     "issueUrl": "http://jira.nim.ovh/browse/{id}",
     "issuePattern": "#[A-Z]+-\\d+",
     "replaceText": {
-      "breaking change: ": "",
+      "breaking changes: ": "",
       "feat: ": "",
       "deprecated: ": "",
       "fix: ": "",
