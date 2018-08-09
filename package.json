@@ -15,7 +15,7 @@
     },
     "unreleased": true,
     "commitLimit": false,
-    "template": "./changelog-template.hbs"
+    "template": "./templates/default-template.hbs"
   },
   "scripts": {
     "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md"
