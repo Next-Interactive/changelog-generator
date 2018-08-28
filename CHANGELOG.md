@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [v2.1.1](https://github.com/Jno21/changelog-generator/compare/v2.1.0...v2.1.1)
+> 28 August 2018
+
+#### :bug:  Fixed
+
+- Fix docs for default_temaplate which contained invalid informations [`7032395`](https://github.com/Jno21/changelog-generator/commit/7032395b8880b12481a39919507eab03afe38e2b)
+
 ### [v2.1.0](https://github.com/Jno21/changelog-generator/compare/v2.0.2...v2.1.0)
 > 9 August 2018
 
