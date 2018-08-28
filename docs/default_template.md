@@ -5,7 +5,7 @@ They should use the pattern defined in the table under.
 
 | Type  | Commit template | Description |
 | ------------- | ------------- | ------------- |
-| Breaking Change | `breaking change: description of commit #EXP-1234` | Deprecated usage which is going to disappear in the next version |
+| Breaking Changes | `breaking changes: description of commit #EXP-1234` | Breaking change which involve an minor or major update |
 | New Features | `feat: description of commit #EXP-1234` | When a new feature is added |
 | Changed (*Default*) | `description of commit #EXP-1234` | This is the default commit just containing change to the code that doesn't affect much |
 | Deprecated | `deprecated: description of commit #EXP-1234` | Deprecated usage which is going to disappear in the next version |
