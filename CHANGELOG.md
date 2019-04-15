@@ -4,10 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [Unreleased](https://github.com/Jno21/changelog-generator/compare/v2.2.0...HEAD)
+
+#### PR Merged
+
+#### :wrench:  Changed
+
+- Add typo for PR Merged [`1e2b952`](https://github.com/Jno21/changelog-generator/commit/1e2b9525a3acec453cf9ffab1e91d50aa40e0de8)
+
+#### :bug:  Fixed
+
+- Fix PR link [`3a87b0a`](https://github.com/Jno21/changelog-generator/commit/3a87b0a5b40b2947537955d25ba9c5a7397dacbb)
+
 ### [v2.2.0](https://github.com/Jno21/changelog-generator/compare/v2.1.1...v2.2.0)
 > 15 April 2019
 
-- Update changelog generator  [``](https://github.com/Jno21/changelog-generator/pull/1)
+#### PR Merged
+- Update changelog generator  [`1`](https://github.com/Jno21/changelog-generator/pull/1)
 
 #### :sparkles:  New Features
 
@@ -18,6 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 #### :wrench:  Changed
 
 - Change order of options in package.json to be more readable [`3fbaff9`](https://github.com/Jno21/changelog-generator/commit/3fbaff96401650764d7bd875df56292f043b8525)
+- 2.2.0 [`d7a717d`](https://github.com/Jno21/changelog-generator/commit/d7a717d07d9798c65940502ffb997e8222cb88f7)
 - Add .gitignore for node files [`7e6202d`](https://github.com/Jno21/changelog-generator/commit/7e6202dcef6db031f5822aeac6407e2f33329627)
 - Update documentation to explain unreleased option [`598f267`](https://github.com/Jno21/changelog-generator/commit/598f26775e99581765725022510409c58d896f96)
 
@@ -32,6 +46,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v2.1.1](https://github.com/Jno21/changelog-generator/compare/v2.1.0...v2.1.1)
 > 28 August 2018
 
+#### PR Merged
+
 #### :wrench:  Changed
 
 - 2.1.1 [`a155dba`](https://github.com/Jno21/changelog-generator/commit/a155dba4f6f43c213e7dfa4abc97f780bbb7d9ba)
@@ -42,6 +58,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### [v2.1.0](https://github.com/Jno21/changelog-generator/compare/v2.0.2...v2.1.0)
 > 9 August 2018
+
+#### PR Merged
 
 #### :sparkles:  New Features
 
@@ -54,6 +72,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v2.0.2](https://github.com/Jno21/changelog-generator/compare/v2.0.1...v2.0.2)
 > 9 August 2018
 
+#### PR Merged
+
 #### :wrench:  Changed
 
 - 2.0.2 [`ce6a3b3`](https://github.com/Jno21/changelog-generator/commit/ce6a3b380c74e08b7da7f51773636d30c0795bb0)
@@ -65,6 +85,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v2.0.1](https://github.com/Jno21/changelog-generator/compare/v2.0.0...v2.0.1)
 > 9 August 2018
 
+#### PR Merged
+
 #### :wrench:  Changed
 
 - regenerate changelogs default_example.md [`8adb4c5`](https://github.com/Jno21/changelog-generator/commit/8adb4c502a455c0e76e9d887ba909970207f1794)
@@ -72,6 +94,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [v2.0.0](https://github.com/Jno21/changelog-generator/compare/v1.0.0...v2.0.0)
 > 9 August 2018
+
+#### PR Merged
 
 #### :rotating_light:  Breaking Changes  :rotating_light:
 
@@ -93,6 +117,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### v1.0.0
 > 7 August 2018
+
+#### PR Merged
 
 #### :sparkles:  New Features
 
