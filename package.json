@@ -5,6 +5,9 @@
     "auto-changelog": "1.12.1"
   },
   "auto-changelog": {
+    "unreleased": true,
+    "commitLimit": false,
+    "template": "./templates/default-template.hbs",
     "replaceText": {
       "breaking changes: ": "",
       "feat: ": "",
@@ -12,10 +15,7 @@
       "fix: ": "",
       "removed :": "",
       "security :": ""
-    },
-    "unreleased": true,
-    "commitLimit": false,
-    "template": "./templates/default-template.hbs"
+    }
   },
   "scripts": {
     "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md"
