@@ -2,7 +2,7 @@
   "name": "changelog-generator",
   "version": "2.1.1",
   "devDependencies": {
-    "auto-changelog": "*"
+    "auto-changelog": "1.12.1"
   },
   "auto-changelog": {
     "issueUrl": "http://jira.nim.ovh/browse/{id}",
