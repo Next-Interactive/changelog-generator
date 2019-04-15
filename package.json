@@ -19,6 +19,7 @@
     }
   },
   "scripts": {
-    "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md"
+    "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md",
+    "unreleased": "auto-changelog && git add CHANGELOG.md"
   }
 }
