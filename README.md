@@ -25,6 +25,8 @@ For example if the version in `package.json` is `1.0.1` and you want to update t
 You can also specify specific version, it is useful for `beta` or `alpha` versions:
 `npm version 1.0.1-beta.0`
 
+To update the Changelog when nothing is released yet:
+`npm run unreleased`
 
 Guideline
 ------

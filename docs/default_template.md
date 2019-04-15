@@ -12,6 +12,7 @@ They should use the pattern defined in the table under.
 | Fixed | `fix: description of commit #EXP-1234` | When a fix is done |
 | Removed | `removed: description of commit #EXP-1234` | A functionality or file removed |
 | Security | `security: description of commit #EXP-1234` | Security patch |
+| Unreleased | `unreleased: description of commit` | Commit that will not appear in the Changelog |
 
 
 **Semver & Changelog**:
