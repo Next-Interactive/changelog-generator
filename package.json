@@ -5,8 +5,6 @@
     "auto-changelog": "1.12.1"
   },
   "auto-changelog": {
-    "issueUrl": "http://jira.nim.ovh/browse/{id}",
-    "issuePattern": "#[A-Z]+-\\d+",
     "replaceText": {
       "breaking changes: ": "",
       "feat: ": "",
