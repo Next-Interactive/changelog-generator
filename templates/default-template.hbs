@@ -15,9 +15,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     > {{niceDate}}
   {{/if}}
 
-  {{! TODO: Test the merge template }}
+  #### PR Merged
   {{#each merges}}
-    - {{message}} {{subject}} [`{{shorthash}}`]({{href}})
+    - {{message}} {{subject}} [`{{id}}`]({{href}})
   {{/each}}
 
   {{! List commits with `Breaking change: ` somewhere in the message }}
