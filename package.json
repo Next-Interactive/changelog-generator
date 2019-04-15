@@ -2,11 +2,14 @@
   "name": "changelog-generator",
   "version": "2.1.1",
   "devDependencies": {
-    "auto-changelog": "*"
+    "auto-changelog": "1.12.1"
   },
   "auto-changelog": {
-    "issueUrl": "http://jira.nim.ovh/browse/{id}",
-    "issuePattern": "#[A-Z]+-\\d+",
+    "unreleased": true,
+    "commitLimit": false,
+    "template": "./templates/default-template.hbs",
+    "breakingPattern": "breaking changes: ",
+    "ignoreCommitPattern": "unreleased: ",
     "replaceText": {
       "breaking changes: ": "",
       "feat: ": "",
@@ -14,12 +17,10 @@
       "fix: ": "",
       "removed :": "",
       "security :": ""
-    },
-    "unreleased": true,
-    "commitLimit": false,
-    "template": "./templates/default-template.hbs"
+    }
   },
   "scripts": {
-    "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md"
+    "version": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && auto-changelog -p && git add CHANGELOG.md",
+    "unreleased": "auto-changelog && git add CHANGELOG.md"
   }
 }
