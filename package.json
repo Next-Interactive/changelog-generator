@@ -9,6 +9,7 @@
     "commitLimit": false,
     "template": "./templates/default-template.hbs",
     "breakingPattern": "breaking changes: ",
+    "ignoreCommitPattern": "unreleased: ",
     "replaceText": {
       "breaking changes: ": "",
       "feat: ": "",
