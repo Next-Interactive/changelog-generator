@@ -1,5 +1,7 @@
 # changelog-generator
-Automate the generation of changelog and tagging.
+Automate the generation of changelog and tagging following the [Semantic Versionning](https://semver.org/).
+
+What's a changelog: keepachangelog.com
 
 Installation
 ------
@@ -12,10 +14,23 @@ Then you need to install [auto-changelog](https://github.com/CookPete/auto-chang
 
 `npm install -g auto-changelog`
 
-This will update the *changelog* depending on the commit guideline.
+
+Installation in a repo
+------
+
+Copy the `package.json` from this repo to the repo you want to use changelog-generator. 
+Edit the file to change:
+- the `name` to your repository name
+- the `version` to the current version of your repository (tag) or set it to 0.0.1 to begin with.
+
+Run `npm install` to install locally `auto-changelog`
+
+You are ready to use it !
 
 Usage
 ------
+
+To release a new version:
 
 `npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]`
 
@@ -24,6 +39,8 @@ For example if the version in `package.json` is `1.0.1` and you want to update t
 
 You can also specify specific version, it is useful for `beta` or `alpha` versions:
 `npm version 1.0.1-beta.0`
+
+After this you just have to `git push` and your version is released.
 
 To update the Changelog when nothing is released yet:
 `npm run unreleased`
