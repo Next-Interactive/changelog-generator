@@ -1,6 +1,6 @@
 {
   "name": "changelog-generator",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "devDependencies": {
     "auto-changelog": "1.12.1"
   },
