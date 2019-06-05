@@ -7,7 +7,7 @@
   "auto-changelog": {
     "unreleased": true,
     "commitLimit": false,
-    "template": "./templates/default-template.hbs",
+    "template": "https://raw.githubusercontent.com/Next-Interactive/changelog-generator/master/templates/default-template.hbs",
     "breakingPattern": "breaking changes: ",
     "ignoreCommitPattern": "unreleased: ",
     "replaceText": {
