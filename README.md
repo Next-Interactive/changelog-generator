@@ -18,6 +18,12 @@ Then you need to install [auto-changelog](https://github.com/CookPete/auto-chang
 Installation in a repo
 ------
 
+Before doing it follow the usual workflow guideline for git:
+- Create a branch
+- Make a PR
+- Wait for validation
+- Merge
+
 Copy the `package.json` from this repo to the repo you want to use changelog-generator. 
 Edit the file to change:
 - the `name` to your repository name
@@ -30,6 +36,8 @@ You are ready to use it !
 Usage
 ------
 
+Releasing a new version must be done on `master`:
+
 To release a new version:
 
 `npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]`
@@ -41,6 +49,8 @@ You can also specify specific version, it is useful for `beta` or `alpha` versio
 `npm version 1.0.1-beta.0`
 
 After this you just have to `git push` and your version is released.
+
+:warning: Before merging a branch you should update the Changelog to include your change in the changelog without making a release.
 
 To update the Changelog when nothing is released yet:
 `npm run unreleased`
