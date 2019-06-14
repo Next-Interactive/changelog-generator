@@ -48,7 +48,7 @@ For example if the version in `package.json` is `1.0.1` and you want to update t
 You can also specify specific version, it is useful for `beta` or `alpha` versions:
 `npm version 1.0.1-beta.0`
 
-After this you just have to `git push` and your version is released.
+After this you just have to `git push && git push --tags` and your version is released.
 
 :warning: Before merging a branch you should update the Changelog to include your change in the changelog without making a release.
 
